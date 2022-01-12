@@ -1,11 +1,9 @@
 <template>
-  <div class="in-roll">
-    <h1>Здесь роллы</h1> <br/>
-    <h1>И здесь роллы</h1> <br/>
-    <h1>И здесь роллы</h1> <br/>
-    <h1>И здесь роллы тоже</h1> <br/>
-    <h1>И здесь роллы тоже</h1> <br/>
-    <h1>И здесь роллы тоже</h1>
+  <div class="in-roll-item">
+    <img src="" alt="img">
+    <p>Item 1</p>
+    <p>Price: 100$</p>
+    <button>Add to cart</button>
   </div>
 </template>
 
@@ -16,5 +14,13 @@ export default {
 </script>
 
 <style>
-
+.in-roll-item {
+  flex-basis: 15%;
+  box-shadow: black;
+  padding: 16px;
+  margin-bottom: 8px;
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+}
 </style>
