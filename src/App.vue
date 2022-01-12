@@ -2,7 +2,7 @@
   <router-view/>
   <div id="nav">
     <router-link to="/" exact active-class="active"></router-link>
-    <router-link to="/roll" active-class="active">Роллы</router-link>
+    
   </div>
 </template>
 

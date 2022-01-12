@@ -2,7 +2,7 @@
   <div class="home">
     <img alt="App logo" src="../assets/logo.png">
     <InHome/>
-    
+    <router-link to="/roll" active-class="active">Роллы</router-link>
   </div>
 </template>
 

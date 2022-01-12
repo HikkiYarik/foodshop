@@ -1,5 +1,6 @@
 <template>
   <div class="roll">
+      <router-link to="/roll" active-class="active">Роллы</router-link>
       <InRoll/>
       
   </div>
