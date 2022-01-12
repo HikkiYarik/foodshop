@@ -1,5 +1,7 @@
 <template>
-  <div class="discount">Акции</div>
+  <div class="discount">
+  
+  </div>
 </template>
 
 <script>

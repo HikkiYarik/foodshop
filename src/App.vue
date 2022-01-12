@@ -1,31 +1,19 @@
 <template>
   <router-view/>
   <div id="nav">
-    <router-link to="/"></router-link>
+    <router-link to="/" exact active-class="active"></router-link>
+    <router-link to="/roll" active-class="active"></router-link>
   </div>
 </template>
 
 <script>
 import Home from '../src/views/Home.vue'
-//import Roll from '../views/Roll.vue'
-//import Soup from '../views/Soup.vue'
-//import Salad from '../views/Salad.vue'
-//import PanAsian from '../views/PanAsian.vue'
-//import Discount from '../views/Discount.vue'
-//import DesertDrink from '../views/DesertDrink.vue'
-//import Cart from '../views/Cart.vue'
+
 
 export default {
  name: 'App',
  components: {
     Home
-//  Roll,
-//  Soup,
-//  Salad,
-//  PanAsian,
-//  Discount,
-//  DesertDrink,
-//  Cart
  }
 }
 </script>

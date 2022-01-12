@@ -1,10 +1,17 @@
 <template>
-  
+  <div class="roll">
+      <InRoll/>
+  </div>
 </template>
 
 <script>
+import InRoll from '../components/InRoll.vue'
+
 export default {
-    name: 'Roll'
+    name: 'Roll',
+    components: {
+        InRoll
+    }
 }
 </script>
 
