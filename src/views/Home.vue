@@ -2,7 +2,7 @@
   <div class="home">
     <img alt="App logo" src="../assets/logo.png">
     <InHome/>
-    <Roll href="/roll">Роллы</Roll>
+    
   </div>
 </template>
 

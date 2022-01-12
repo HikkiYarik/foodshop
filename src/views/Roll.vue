@@ -1,6 +1,7 @@
 <template>
   <div class="roll">
       <InRoll/>
+      
   </div>
 </template>
 
