@@ -1,7 +1,7 @@
 <template>
 <router-view></router-view>
   <div class="inhome">
-    <h1>Текст</h1>
+    <h1>Тут будет карусель-слайдер,<br/>О заведении, и ниже футер</h1>
   </div>
 </template>
 

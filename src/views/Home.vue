@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <router-link to="/"><img alt="App logo" src="../assets/logo.png"></router-link> <br/>
-    <router-link to="/roll" active-class="active">Роллы</router-link> <br/>
+    <header class="header-app">
+      <router-link to="/"><img alt="App logo" src="../assets/logo.png"></router-link> <br/>
+      <router-link to="/roll" active-class="active">Роллы</router-link> <br/>
+    </header>
     <router-view to="/inhome" active-class="active"><InHome/></router-view>
   </div>
 </template>

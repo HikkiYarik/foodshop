@@ -1,8 +1,6 @@
 <template>
   <router-view/>
-  <div id="nav">
-    <router-link to="/" exact active-class="active"></router-link>
-  </div>
+  
 </template>
 
 <script>
