@@ -2,13 +2,11 @@
   <router-view/>
   <div id="nav">
     <router-link to="/" exact active-class="active"></router-link>
-    
   </div>
 </template>
 
 <script>
 import Home from '../src/views/Home.vue'
-
 
 export default {
  name: 'App',

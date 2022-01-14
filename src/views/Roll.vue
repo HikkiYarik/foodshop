@@ -1,6 +1,7 @@
 <template>
-  <div class="roll"> 
-    <router-link to="/roll" active-class="active">Роллы</router-link>
+  <div class="roll">
+    <router-link to="/"><img alt="App logo" src="../assets/logo.png"></router-link> <br/> 
+    <div><router-link to="/roll" active-class="active">Роллы</router-link></div> <br/>
     <div class="roll-v2">
       <InRoll/>
     </div>

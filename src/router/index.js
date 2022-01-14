@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Roll from '../views/Roll.vue'
+import InHome from '../components/InHome'
+
 
 const routes = [
   {
@@ -12,6 +14,11 @@ const routes = [
     path: '/roll',
     name: 'roll',
     component: Roll
+  },
+  {
+    path: '/inhome',
+    name: '/inhome',
+    component: InHome
   }
 ]
 
