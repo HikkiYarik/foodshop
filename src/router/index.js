@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Roll from '../views/Roll.vue'
 import InHome from '../components/InHome'
+import Soup from '../views/Soup.vue'
 
 
 const routes = [
@@ -19,6 +20,11 @@ const routes = [
     path: '/inhome',
     name: '/inhome',
     component: InHome
+  },
+  {
+    path: '/soup',
+    name: 'soup',
+    component: Soup
   }
 ]
 
