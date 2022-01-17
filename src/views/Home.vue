@@ -1,17 +1,29 @@
 <template>
-  <div class="home">
+  <div class="home-wrapper">
     <header class="header-app">
-      <router-link to="/"><img alt="App logo" src="../assets/logo.png"></router-link> <br/>
-        <div class="nav-menu">
-          <router-link to="/roll">Роллы</router-link>
-          <router-link to="/soup" active-class="active">Супы</router-link>
-          <router-link to="/salad" active-class="active">Салаты</router-link>
-          <router-link to="/panasia" active-class="active">Паназия</router-link>
-          <router-link to="/discount" active-class="active">Акции</router-link>
-          <router-link to="/desert-and-drink" active-class="active">Десерты и напитки</router-link>
-        </div> <br/>
+      <div class="container">
+          <router-link to="/"><img alt="App logo" src="../assets/logo.png"></router-link>
+          <input type="search, submit">
+          <img src="" alt="img">
+      </div>
+      <div class="container">
+        <router-link to="/roll" class="active">Роллы</router-link>
+        <router-link to="/soup" class="active">Супы</router-link>
+        <router-link to="/salad" class="active">Салаты</router-link>
+        <router-link to="/panasia" class="active">Паназия</router-link>
+        <router-link to="/discount" class="active">Акции</router-link>
+        <router-link to="/desert-and-drink" class="active">Десерты и напитки</router-link>
+      </div> <br/>
     </header>
     <router-view to="/inhome" active-class="active"><InHome/></router-view>
+    <footer class="footer-app">
+      <div class="footer-containers flex align-stretch ">
+        <div class="footer-block"></div>
+        <div class="footer-block"></div>
+        <div class="footer-block"></div>
+        <div class="footer-block"></div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -44,7 +56,21 @@ export default {
 
 
 <style>
-.nav-menu {
+html, body {
+  height: 100%;
+}
+.home-wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.container-main-logo {
+  display: flex;
+}
+.container-main-another{
+  display: flex;
+  align-items: center;
+}
+.container {
   border-style: solid;
   border-right: hidden;
   border-left: hidden;
@@ -57,6 +83,15 @@ export default {
   align-items: center;
   justify-content: space-between;
   overflow: visible;
-  text-decoration: none;
  }
+ .active {
+   text-decoration: none;
+ }
+ .footer-app {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
 </style>
