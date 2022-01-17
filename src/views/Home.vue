@@ -3,12 +3,12 @@
     <header class="header-app">
       <router-link to="/"><img alt="App logo" src="../assets/logo.png"></router-link> <br/>
         <div class="nav-menu">
-          <router-link to="/roll" active-class="active">Роллы</router-link>
+          <router-link to="/roll">Роллы</router-link>
           <router-link to="/soup" active-class="active">Супы</router-link>
-          <router-link to="/roll" active-class="active">Салаты</router-link>
-          <router-link to="/roll" active-class="active">Паназия</router-link>
-          <router-link to="/roll" active-class="active">Акции</router-link>
-          <router-link to="/roll" active-class="active">Десерты и напитки</router-link>
+          <router-link to="/salad" active-class="active">Салаты</router-link>
+          <router-link to="/panasia" active-class="active">Паназия</router-link>
+          <router-link to="/discount" active-class="active">Акции</router-link>
+          <router-link to="/desert-and-drink" active-class="active">Десерты и напитки</router-link>
         </div> <br/>
     </header>
     <router-view to="/inhome" active-class="active"><InHome/></router-view>
@@ -19,23 +19,24 @@
 import InHome from '../components/InHome.vue'
 import Roll from '../views/Roll.vue'
 import Soup from '../views/Soup.vue'
-/*import Salad from '../views/Salad.vue'
+import Salad from '../views/Salad.vue'
 import PanAsian from '../views/PanAsian.vue'
 import Discount from '../views/Discount.vue'
 import DesertDrink from '../views/DesertDrink.vue'
-import Cart from '../views/Cart.vue'
-*/
+/*import Cart from '../views/Cart.vue'*/
+
+
 export default {
   name: 'Home',
   components: {
     InHome,
     Roll,
-    Soup
-    /*Salad,
+    Soup,
+    Salad,
     PanAsian,
     Discount,
-    DesertDrink,
-    Cart */
+    DesertDrink
+    /*Cart*/
   }
 }
 </script>
@@ -48,12 +49,14 @@ export default {
   border-right: hidden;
   border-left: hidden;
   border-color: black;
-  /*text-decoration: none;*/
-    
+  text-decoration: none; 
   white-space: nowrap;
   height: 100%;
+  border-bottom: 2px solid transparent;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid transparent;
+  justify-content: space-between;
+  overflow: visible;
+  text-decoration: none;
  }
 </style>
