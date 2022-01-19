@@ -15,10 +15,17 @@
         <router-link to="/desert-and-drink" class="active">Десерты и напитки</router-link>
       </div> <br/>
     </header>
+    <div class="content">
     <router-view to="/inhome" active-class="active"><InHome/></router-view>
+    </div>
     <footer class="footer-app">
       <div class="footer-containers flex align-stretch ">
-        <div class="footer-block"></div>
+        <div class="footer-block">
+          <p class="f-title uppercase">Food Impact</p>
+          <div class="list">
+            <router-link to="/roll">Роллы</router-link>
+          </div>
+        </div>
         <div class="footer-block"></div>
         <div class="footer-block"></div>
         <div class="footer-block"></div>
@@ -88,10 +95,13 @@ html, body {
    text-decoration: none;
  }
  .footer-app {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-}
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+ }
+  #content {
+    min-height: 100%;
+ }
 </style>
