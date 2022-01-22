@@ -1,27 +1,24 @@
 <template>
   <div id='app'>
-    <header class="head">
-      <router-link to="/"><img alt="App logo" src="./assets/logo.png"></router-link>
-    </header>
-    <main>
-      <nav class="nav-menu">
-        <router-link to="/roll" class="active">Роллы</router-link>
-        <router-link to="/soup" class="active">Супы</router-link>
-        <router-link to="/salad" class="active">Салаты</router-link>
-        <router-link to="/panasia" class="active">Паназия</router-link>
-        <router-link to="/discount" class="active">Акции</router-link>
-        <router-link to="/desert-and-drink" class="active">Десерты и напитки</router-link>
-      </nav>
-      <div class="content"></div>
-    </main>
-    <footer class="footer"></footer>
+    <Header/>
+    <div class="content">
+      <router-view></router-view>
+    </div>    
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Header from '../src/views/Header.vue'
+import Footer from '../src/views/Footer.vue'
+
 
 export default {
- name: 'App'
+ name: 'App',
+ components: {
+   Header,
+   Footer
+ }
 }
 </script>
 
@@ -35,5 +32,12 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.nav-menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
