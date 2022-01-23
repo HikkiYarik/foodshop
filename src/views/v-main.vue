@@ -1,12 +1,12 @@
 <template>
-  <div>
-      <img src="../src/assets/logo.png" alt="">
+  <div class="v-main-content">
+      Это контент
   </div>
 </template>
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Main'
 }
 </script>
 

@@ -1,16 +1,16 @@
 <template>
   <div id='app'>
     <Header/>
-    <div class="content">
-      <router-view></router-view>
-    </div>    
+      <div class="content">
+        <router-view/>
+      </div>
     <Footer/>
   </div>
 </template>
 
 <script>
-import Header from '../src/views/Header.vue'
-import Footer from '../src/views/Footer.vue'
+import Header from './pages/Header.vue'
+import Footer from '../src/pages/Footer.vue'
 
 
 export default {
@@ -33,11 +33,5 @@ html, body {
   text-align: center;
   color: #2c3e50;
 }
-.nav-menu {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 </style>

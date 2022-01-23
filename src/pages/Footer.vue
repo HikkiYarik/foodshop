@@ -1,5 +1,5 @@
 <template>
-  <div>Здесь футер</div>
+  <div class="foot">Здесь футер</div>
 </template>
 
 <script>
