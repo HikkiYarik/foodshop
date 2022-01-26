@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import NavMenu from './NavMenu.vue'
+import NavMenu from './Header/NavMenu.vue'
 
 export default {
     name: 'Header',
