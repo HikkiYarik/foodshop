@@ -1,6 +1,6 @@
 <template>
   <div class="v-main-content">
-      Это контент
+      Тут будет основной контент
   </div>
 </template>
 

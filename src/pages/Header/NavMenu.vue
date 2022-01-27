@@ -2,9 +2,12 @@
     <div class="nav-menu">
         <div class="container">
             <div class="div-nav">
+                <router-link class="router-link" to="">Сеты</router-link>
+                <router-link class="router-link" to="">Суши и маки роллы</router-link>
                 <router-link class="router-link" to="">Роллы</router-link>
                 <router-link class="router-link" to="">Супы</router-link>
                 <router-link class="router-link" to="">Паназия</router-link>
+                <router-link class="router-link" to="">Сашими</router-link>
                 <router-link class="router-link" to="">Салаты</router-link>
                 <router-link class="router-link" to="">Десерты и напитки</router-link>
                 <router-link class="router-link" to="">Акции</router-link>
