@@ -1,6 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Main from '../views/v-main.vue'
 
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/foodimpact/'
+    : '/'
+}
+
 const routes = [
   {
     path: '/',

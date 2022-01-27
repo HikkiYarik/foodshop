@@ -24,6 +24,7 @@ export default {
 </script>
 
 <style>
+
 .container {
     display: flex;
     align-items: center;
@@ -31,6 +32,7 @@ export default {
     overflow: visible;
     margin-right: 20px;
     margin-left: 20px;
+    white-space: nowrap;
 }
 .router-link{
     text-decoration: none;
@@ -56,4 +58,5 @@ export default {
     border-color: inherit;
     margin: 0%;
 }
+
 </style>
