@@ -1,7 +1,7 @@
 <template>
   <div class="head">
       <div class="top-head">
-        <img src="../assets/logo.png">
+        <img class="logo" src="../assets/logo.png">
       </div>
       <div class="bot-head">
           <NavMenu/>
@@ -23,5 +23,9 @@ export default {
 <style>
 #head {
     display: flex;
+}
+.logo {
+    position: relative;
+    z-index: -1;
 }
 </style>

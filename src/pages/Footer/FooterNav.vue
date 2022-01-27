@@ -25,10 +25,10 @@
       <p class="f-title support-title">Поддержка</p>
       <div class="list">
         <p>
-          <router-link to="">0 800 203 123</router-link>
+          <router-link class="f-title" to="">0 800 203 123</router-link>
         </p>
         <p>
-          <router-link to="">foodimpact@gmail.com</router-link>
+          <router-link class="f-title" to="">foodimpact@gmail.com</router-link>
         </p>
       </div>
     </div>
@@ -46,6 +46,8 @@ export default {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 120%;
   font-weight: bold;
+  text-decoration: none;
+  color: inherit;
 }
 .f-list-el {
   text-decoration: none;

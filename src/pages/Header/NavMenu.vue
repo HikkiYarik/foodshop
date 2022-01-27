@@ -42,16 +42,15 @@ export default {
     overflow: auto;
     align-items: center;
     justify-content: space-between;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 .nav-menu {
-    box-shadow: 0px 20px 40px -10px #DCDCDC;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-style: solid;
+    
+    box-shadow: 5px 0px 15px 5px #eeeaea;
+    /* border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
     border-color: inherit;
-    border-right: hidden;
-    border-left: hidden;
-    border-bottom: hidden;
     margin: 0%;
 }
 </style>
