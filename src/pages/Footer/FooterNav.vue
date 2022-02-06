@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex align-stretch justify-between flex-wrap">
+  <div class="container">
     <div class="footer-block">
       <p class="f-title uppercase">Food Impact</p>
       <div class="list">
@@ -42,6 +42,12 @@ export default {
 </script>
 
 <style>
+.container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .f-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120%;

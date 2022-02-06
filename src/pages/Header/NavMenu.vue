@@ -47,11 +47,11 @@ export default {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 160%;
     width: 100%;
-    flex-wrap: nowrap;
+    height: 100%;
     display: flex;
-    overflow: auto;
-    align-items: center;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: space-around;
+    justify-content: space-around;
     padding-top: 7px;
     padding-bottom: 7px;
 }
