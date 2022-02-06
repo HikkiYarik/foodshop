@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-.foot { 
+.foot {
   position: absolute; 
   left: 0;
   right: 0;

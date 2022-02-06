@@ -1,6 +1,6 @@
 <template>
   <div class="v-main-content">
-      Тут будет основной контент
+      основная страница
   </div>
 </template>
 
@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style>
-
+.v-main-content {
+  background-color: cadetblue;
+}
 </style>

@@ -2,7 +2,7 @@
     <div class="nav-menu">
         <div class="container">
             <div class="div-nav">
-                <router-link class="router-link" to="">Сеты</router-link>
+                <router-link class="router-link" to="/set">Сеты</router-link>
                 <router-link class="router-link" to="">Суши и маки роллы</router-link>
                 <router-link class="router-link" to="">Роллы</router-link>
                 <router-link class="router-link" to="">Супы</router-link>
@@ -18,8 +18,12 @@
 </template>
 
 <script>
+import Set from '/myproj/foodimpact/src/views/v-set.vue'
 export default {
-    name: 'NavMenu'
+    name: 'NavMenu',
+    components: {
+        Set,
+    }
 }
 </script>
 
@@ -33,6 +37,7 @@ export default {
     margin-right: 20px;
     margin-left: 20px;
     white-space: nowrap;
+    flex-direction:  ;
 }
 .router-link{
     text-decoration: none;
@@ -53,10 +58,9 @@ export default {
 .nav-menu {
     
     box-shadow: 5px 0px 15px 5px #eeeaea;
-    /* border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px; */
     border-color: inherit;
     margin: 0%;
 }
 
 </style>
+
