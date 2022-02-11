@@ -3,7 +3,7 @@
         <div class="container">
             <div class="div-nav">
                 <router-link class="router-link" to="/set">Сеты</router-link>
-                <router-link class="router-link" to="">Суши и маки роллы</router-link>
+                <router-link class="router-link" to="/sushi">Суши и маки роллы</router-link>
                 <router-link class="router-link" to="">Роллы</router-link>
                 <router-link class="router-link" to="">Супы</router-link>
                 <router-link class="router-link" to="">Паназия</router-link>
@@ -19,10 +19,13 @@
 
 <script>
 import Set from '/myproj/foodimpact/src/views/v-set.vue'
+import Sushi from '/myproj/foodimpact/src/views/v-sushi.vue'
+
 export default {
     name: 'NavMenu',
     components: {
         Set,
+        Sushi
     }
 }
 </script>

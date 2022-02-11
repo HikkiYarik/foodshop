@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Main from '../views/v-main.vue'
 import Set from '../views/v-set.vue'
+import Sushi from '../views/v-sushi.vue'
+
 
 const routes = [
   {
@@ -12,7 +14,12 @@ const routes = [
     path: '/set',
     name: 'set',
     component: Set
-  }
+  },
+  {
+    path: '/sushi',
+    name: 'sushi',
+    component: Sushi
+  },
 ]
 
 const router = createRouter({

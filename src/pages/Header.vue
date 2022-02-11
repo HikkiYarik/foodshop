@@ -30,5 +30,7 @@ export default {
 .logo {
     position: relative;
     z-index: -1;
+    display: flex;
+    justify-content: space-between;
 }
 </style>
