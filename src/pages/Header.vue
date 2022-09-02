@@ -1,13 +1,13 @@
 <template>
   <div class="head">
-    <div class="container-fluid">
-      <div class="top-head">
+    <div class="row row-cols-1">
+      <div class="top-head col">
         <router-link tag="img" to="/"><img class="logo" src="../assets/logo.png"></router-link>
       </div>
-    </div>
-      <div class="bot-head">
+      <div class="bot-head col">
           <NavMenu/>
       </div>
+    </div>
   </div>
 </template>
 

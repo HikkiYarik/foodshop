@@ -2,11 +2,11 @@
     <div class="nav-menu">
         <div class="col-12 div-nav">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6">
+                <div class="row row-cols-2">
+                    <div class="col">
                         <router-link class="router-link" to="/set">Сеты</router-link>
                     </div>    
-                    <div class="col-lg-6">
+                    <div class="col">
                         <router-link class="router-link" to="/sushi">Суши и маки роллы</router-link>
                     </div>
                 </div>
