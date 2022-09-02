@@ -1,41 +1,16 @@
 <template>
     <div class="nav-menu">
-            <div class="col-12 div-nav">
-                <!-- <div class="container-fluid">
-                    <div class="row"> -->
-                <div class="col-lg-1"></div>
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="/set">Сеты</router-link>
-                </div>    
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="/sushi">Суши и маки роллы</router-link>
+        <div class="col-12 div-nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <router-link class="router-link" to="/set">Сеты</router-link>
+                    </div>    
+                    <div class="col-lg-6">
+                        <router-link class="router-link" to="/sushi">Суши и маки роллы</router-link>
+                    </div>
                 </div>
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="">Роллы</router-link>
-                </div>
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="">Супы</router-link>
-                </div>
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="">Паназия</router-link>
-                </div>
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="">Сашими</router-link>
-                </div>
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="">Салаты</router-link>
-                </div>
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="">Десерты и напитки</router-link>
-                </div>
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="">Акции</router-link>
-                </div>
-                <div class="col-lg-1">
-                    <router-link class="router-link" to="">Закуски и дополнения</router-link>
-                </div>
-                <div class="col-lg-1"></div>
-                
+            </div>
         </div>
     </div>
 </template>
