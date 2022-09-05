@@ -1,7 +1,7 @@
 <template>
-    <div class="nav-menu">
-        <div class="col-12 div-nav">
-            <div class="container-fluid">
+    <!-- <div class="nav-menu">
+        <div class="div-nav"> -->
+            <div class="container-fluid div-nav nav-menu">
                 <div class="row row-cols-2">
                     <div class="col">
                         <router-link class="router-link" to="/set">Сеты</router-link>
@@ -11,8 +11,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        <!-- </div>
+    </div> -->
 </template>
 
 <script>

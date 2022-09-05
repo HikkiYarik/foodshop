@@ -1,10 +1,20 @@
 <template>
-  <div class="head">
-    <div class="row row-cols-1">
-      <div class="top-head col">
-        <router-link tag="img" to="/"><img class="logo" src="../assets/logo.png"></router-link>
+  <div class="сontainer-fluid">
+    <div class="row">
+      <div class="col-12 top-head">
+        <div class="row row-cols-7">
+          <div class="col-1">Херсон</div>
+          <div class="col-1">Язык сайта</div>
+          <div class="col-1">Номер горячей линии</div>
+          <div class="col-6">
+            <router-link tag="img" to="/"><img class="logo" src="../assets/logo.png"></router-link>
+          </div>
+          <div class="col-1">Поиск</div>
+          <div class="col-1">Вход/регистрация</div>
+          <div class="col-1">Корзина</div>
+        </div>
       </div>
-      <div class="bot-head col">
+      <div class="col bot-head">
           <NavMenu/>
       </div>
     </div>
