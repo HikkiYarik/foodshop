@@ -3,15 +3,15 @@
     <div class="row">
       <div class="col-12 top-head">
         <div class="row row-cols-7">
-          <div class="col-1">Херсон</div>
-          <div class="col-1">Язык сайта</div>
-          <div class="col-1">Номер горячей линии</div>
-          <div class="col-6">
+          <div class="col region">Херсон</div>
+          <div class="col app-leng">Язык сайта</div>
+          <div class="col tel">Номер горячей линии</div>
+          <div class="col order-6 home">
             <router-link tag="img" to="/"><img class="logo" src="../assets/logo.png"></router-link>
           </div>
-          <div class="col-1">Поиск</div>
-          <div class="col-1">Вход/регистрация</div>
-          <div class="col-1">Корзина</div>
+          <div class="col search">Поиск</div>
+          <div class="col log-reg">Вход/регистрация</div>
+          <div class="col basket">Корзина</div>
         </div>
       </div>
       <div class="col bot-head">
