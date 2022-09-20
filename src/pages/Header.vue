@@ -5,11 +5,13 @@
         <div class="row row-cols-7">
           <div class="col region">Херсон</div>
           <div class="col app-leng">Язык сайта</div>
-          <div class="col tel">Номер горячей линии</div>
+          <div class="col tel">0 800 203 123</div>
           <div class="col order-6 home">
             <router-link tag="img" to="/"><img class="logo" src="../assets/logo.png"></router-link>
           </div>
-          <div class="col search">Поиск</div>
+          <div class="col">
+            <input class="search" v-model="search">
+          </div>
           <div class="col log-reg">Вход/регистрация</div>
           <div class="col basket">Корзина</div>
         </div>

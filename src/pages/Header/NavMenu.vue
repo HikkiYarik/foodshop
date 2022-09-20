@@ -1,18 +1,14 @@
 <template>
-    <!-- <div class="nav-menu">
-        <div class="div-nav"> -->
-            <div class="container-fluid div-nav nav-menu">
-                <div class="row row-cols-2">
-                    <div class="col">
-                        <router-link class="router-link" to="/set">Сеты</router-link>
-                    </div>    
-                    <div class="col">
-                        <router-link class="router-link" to="/sushi">Суши и маки роллы</router-link>
-                    </div>
-                </div>
+    <div class="container-fluid div-nav nav-menu">
+        <div class="row row-cols-2">
+            <div class="col">
+                <router-link class="router-link" to="/set">Сеты</router-link>
+            </div>    
+            <div class="col">
+                <router-link class="router-link" to="/sushi">Суши и маки роллы</router-link>
             </div>
-        <!-- </div>
-    </div> -->
+        </div>
+    </div>
 </template>
 
 <script>
@@ -56,7 +52,6 @@ export default {
     padding-bottom: 7px;
 }
 .nav-menu {
-    
     box-shadow: 5px 0px 15px 5px #eeeaea;
     border-color: inherit;
     margin: 0%;
