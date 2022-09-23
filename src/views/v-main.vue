@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import Slider from '../components/v-carousel.vue'
+
 
 export default {
     name: 'Main',
     components: {
-      Slider,
+      
     }
 }
 </script>

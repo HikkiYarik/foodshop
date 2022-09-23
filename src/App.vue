@@ -26,7 +26,6 @@ export default {
 <style>
 html, body {
   margin: 0px;
-  overflow-x: hidden;
 }
 #app {
   font-family:sans-serif;
