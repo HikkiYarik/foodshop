@@ -11,11 +11,22 @@
           <div class="col">
             <input class="search" v-model="search">
           </div>
+
+
           <div class="col log-reg">
-            <modal>
-              <button>Вход/Регистрация</button>
-            </modal>
+            <button
+              type="button"
+              class="btn"
+              @click="showModal">
+              Open Modal!
+            </button>
+
+            <modal
+              v-show="isModalVisible"
+              @close="closeModal"/>
           </div>
+
+
           <div class="col basket">Корзина</div>
         </div>
       </div>
@@ -27,15 +38,29 @@
 <script>
 import NavMenu from './Header/NavMenu.vue'
 import Main from '../views/v-main.vue'
-// import modal from '../components/v-modalreg.vue'
+import modal from '../components/v-modalreg.vue'
+
 
 export default {
     name: 'Header',
     components: {
         NavMenu,
         Main,
-        // modal
-    }
+        modal
+    },
+    data () {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    },
 }
 </script>
 

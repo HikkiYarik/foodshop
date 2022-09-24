@@ -1,4 +1,5 @@
 <template>
+  <transition name="modal-fade">
     <div class="modal-backdrop">
         <div class="modal">
             <header class="modal-header">
@@ -30,8 +31,9 @@
                     </button>
                 </slot>
             </footer>
+        </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -107,5 +109,14 @@ export default {
     background: #4AAE9B;
     border: 1px solid #4AAE9B;
     border-radius: 2px;
+  }
+  .modal-fade-enter,
+  .modal-fade-leave-active {
+    opacity: 0;
+  }
+
+  .modal-fade-enter-active,
+  .modal-fade-leave-active {
+    transition: opacity .5s ease
   }
 </style>
