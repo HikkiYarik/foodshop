@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid footer">
+  <div class=".container-fluid footer ">
     <div class="col-12">
-        <div class="row row-cols-4">
+        <div class="row row-cols-4 gx-0">
           <div class="col first">
             <p class="f-title uppercase">Food Impact</p>
             <router-link class="f-list-el" to="">О компании</router-link> <br/><br/>
@@ -40,7 +40,8 @@ export default {
   left: 0;
   right: 0;
   bottom: 0; 
-  height: 50px; 
+  height: 50px;
+  
 }
 .container-fluid {
   display: flex;
@@ -59,4 +60,5 @@ export default {
   text-decoration: none;
   color: inherit;
 }
+
 </style>

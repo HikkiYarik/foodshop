@@ -1,5 +1,8 @@
 <template>
-    
+  <Slide
+  width="600"
+  class="col-xs-12 col-sm-12"
+  >
     <div class="container-fluid div-nav nav-menu">
         <div class="row row-cols-2">
             <div class="col">
@@ -10,26 +13,27 @@
             </div>
         </div>
     </div>
-    
+  </Slide>
 </template>
 
 <script>
-
-import Set from '/myproj/foodimpact/src/views/v-set.vue'
-import Sushi from '/myproj/foodimpact/src/views/v-sushi.vue'
+    import  {  Slide  }  from  'vue3-burger-menu'
+    // импортируйте переходы CSS, которые вы хотите использовать, в данном случае мы используем `Slide`
+    import Set from '/myproj/foodimpact/src/views/v-set.vue'
+    import Sushi from '/myproj/foodimpact/src/views/v-sushi.vue'
 
 export default {
-    name: 'NavMenu',
+    name: 'BurgerNav',
     components: {
+        Slide,
         Set,
         Sushi
-    }
+}
 }
 </script>
 
 <style>
-
-.container-fluid {
+    .container-fluid {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +41,7 @@ export default {
     margin-right: 20px;
     margin-left: 20px;
     white-space: nowrap;
-    
+
 }
 .router-link{
     text-decoration: none;
@@ -61,6 +65,4 @@ export default {
     margin: 0%;
 }
 
-
 </style>
-

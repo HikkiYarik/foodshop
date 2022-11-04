@@ -13,8 +13,10 @@
     "core-js": "^3.6.5",
     "travis": "^0.1.1",
     "vue": "^3.2.37",
+    "vue-bs-modal": "^0.7.9",
     "vue-carousel": "^0.18.0",
     "vue-router": "^4.0.0-0",
+    "vue3-burger-menu": "^1.1.1",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {

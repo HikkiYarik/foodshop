@@ -1,10 +1,10 @@
 <template>
   <div id='app'>
-    <Header/>
+    <Header></Header>
       <div class="content">
         <router-view/>
       </div>
-    <Footer/>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -33,6 +33,6 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
 }
-
 </style>
