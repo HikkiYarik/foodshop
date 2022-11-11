@@ -1,37 +1,27 @@
 <template>
   
-  <div class="сontainer-fluid col-12 top-head">
+  <div class="сontainer-fluid">
+    <div class="col-12 top-head">
         <div class="row row-cols-7 gx-0">
-          <div class="col region">Херсон</div>
+          <!-- <div class="col region">Херсон</div>
           <div class="col app-leng">Язык сайта</div>
-          <div class="col tel">0 800 203 123</div>
+          <div class="col tel">0 800 203 123</div> -->
           <div class="col order-6 home">
             <router-link tag="img" to="/"><img class="logo" src="../assets/logo.png"></router-link>
           </div>
-          <div class="col">
-            <input class="search" v-model="search">
-          </div>
-
-
-          <div class="col log-reg">
-            <!-- <button
-              type="button"
-              class="btn"
-              @click="showModal">
-                Open Modal!
-              </button>
-              <Modal
-                v-show="isModalVisible"
-                @close="closeModal"/> -->
-          </div>
-
-
-          <div class="col basket">Корзина</div>
+          <!-- <div class="col search">
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div> -->
+          <!-- <div class="col log-reg">Sign In</div>
+          <div class="col basket">Корзина</div> -->
         </div>
       </div>
-      <div class="col bot-head">
-          <NavMenu></NavMenu>
-          <!-- <BurgerNav></BurgerNav> -->
+    </div>
+      <div class="col-12 bot-head">
+          <NavigationBar></NavigationBar>
       </div>
 </template>
 
@@ -39,6 +29,7 @@
 import NavMenu from './Header/NavMenu.vue'
 import BurgerNav from './Header/BurgerNav.vue'
 import Main from '../views/v-main.vue'
+import NavigationBar from './Header/NavigationBar.vue'
 
 // import modal from '../components/v-modalreg.vue'
 
@@ -47,7 +38,8 @@ export default {
     components: {
         NavMenu,
         BurgerNav,
-        Main
+        Main,
+        NavigationBar
         // modal
     }
     // data () {
@@ -70,6 +62,7 @@ export default {
 #head {
     display: flex;
     flex: 3;
+    width: 100%;
 }
 
 .logo {

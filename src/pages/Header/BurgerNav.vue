@@ -19,8 +19,8 @@
 <script>
     import  {  Slide  }  from  'vue3-burger-menu'
     // импортируйте переходы CSS, которые вы хотите использовать, в данном случае мы используем `Slide`
-    import Set from '/myproj/foodimpact/src/views/v-set.vue'
-    import Sushi from '/myproj/foodimpact/src/views/v-sushi.vue'
+    import Set from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-set.vue'
+    import Sushi from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-sushi.vue'
 
 export default {
     name: 'BurgerNav',

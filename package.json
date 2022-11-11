@@ -12,6 +12,7 @@
     "bootstrap-vue-3": "^0.1.13",
     "core-js": "^3.6.5",
     "travis": "^0.1.1",
+    "urix": "^0.1.0",
     "vue": "^3.2.37",
     "vue-bs-modal": "^0.7.9",
     "vue-carousel": "^0.18.0",
@@ -20,10 +21,10 @@
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-router": "^5.0.8",
+    "@vue/cli-plugin-vuex": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "@vue/compiler-sfc": "^3.0.0"
   }
 }
