@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <button
+  <nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl bg-light">
+    <div class="container-fluid">
+      <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -9,28 +9,28 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation">
-        <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-            <path
+      <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+      <path
         class="line top"
         d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-            <path
+      <path
         class="line middle"
         d="m 30,50 h 40" />
-            <path
+      <path
         class="line bottom"
         d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-        </svg>
-    </button>
+      </svg>
+      </button>
     <div
-        class="collapse navbar-collapse"
-        id="navbarSupportedContent">
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent">
       <ul
         class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <router-link class="router-link" to="/set">Сеты</router-link>
+        <li class="nav-item col">
+          <router-link class="router-link" to="/set">Сеты</router-link>
         </li>
-        <li class="nav-item">
-            <router-link class="router-link" to="/sushi">Суши и маки роллы</router-link>
+        <li class="nav-item col">
+          <router-link class="router-link" to="/sushi">Суши и маки роллы</router-link>
         </li>
       </ul>
       
@@ -40,8 +40,11 @@
 </template>
 
 <script>
-    import Set from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-set.vue'
-    import Sushi from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-sushi.vue'
+    // import Set from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-set.vue'
+    // import Sushi from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-sushi.vue'
+
+    import Set from '/myproj/foodimpact/foodshop/src/views/v-set.vue'
+    import Sushi from '/myproj/foodimpact/foodshop/src/views/v-sushi.vue'
 
 export default {
     name: 'NavigationBar',
@@ -71,12 +74,15 @@ export default {
     color: inherit;
 }
 .nav-item {
-    margin-right: 25%;
+    width: auto;
 }
 
 
 
 /* styles for burger svg button*/
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0rem;
+}
 .ham8 .top {
   stroke-dasharray: 40 160;
 }
@@ -123,7 +129,5 @@ export default {
   stroke-width:5.5;
   stroke-linecap:round;
 }
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 0rem;
-}
+
 </style>

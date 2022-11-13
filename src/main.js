@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import BootstrapVue3 from 'bootstrap-vue-3'
 
+
 // Optional, since every component import their Bootstrap functionality
 // the following line is not necessary
 // import 'bootstrap'

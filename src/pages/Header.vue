@@ -21,25 +21,23 @@
       </div>
     </div>
       <div class="col-12 bot-head">
-          <NavigationBar></NavigationBar>
+          <!-- <NavigationBar></NavigationBar> -->
+          <NavMenu class="nav-big"></NavMenu>
       </div>
 </template>
 
 <script>
-import NavMenu from './Header/NavMenu.vue'
-import BurgerNav from './Header/BurgerNav.vue'
 import Main from '../views/v-main.vue'
-import NavigationBar from './Header/NavigationBar.vue'
+import NavMenu from './Header/NavMenu.vue'
 
 // import modal from '../components/v-modalreg.vue'
 
 export default {
     name: 'Header',
     components: {
-        NavMenu,
-        BurgerNav,
         Main,
-        NavigationBar
+        NavMenu
+        // NavigationBar
         // modal
     }
     // data () {
@@ -55,8 +53,27 @@ export default {
     //     this.isModalVisible = false;
     //   }
     // },
+    
 }
 </script>
+
+<style lang="scss">
+
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import 'bootstrap/scss/_mixins.scss';
+
+@include media-breakpoint-only(xs, sm) {
+  .nav-big {
+    display: none;
+  }
+}
+
+@include media-breakpoint-only(md, lg, xl) {}
+</style>
+
+
+
 
 <style>
 #head {
@@ -71,5 +88,4 @@ export default {
     display: flex;
     justify-content: space-between;
 }
-
 </style>

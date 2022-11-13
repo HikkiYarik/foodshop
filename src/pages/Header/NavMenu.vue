@@ -1,5 +1,5 @@
 <template>
-    
+<nav class="navbar">
     <div class="container-fluid div-nav nav-menu">
         <div class="row row-cols-2">
             <div class="col">
@@ -10,13 +10,17 @@
             </div>
         </div>
     </div>
-    
+</nav>  
 </template>
 
 <script>
 
-import Set from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-set.vue'
-import Sushi from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-sushi.vue'
+// import Set from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-set.vue'
+// import Sushi from '/Users/tonyt/Документы/GitHub/foodshop/src/views/v-sushi.vue'
+
+import Set from '/myproj/foodimpact/foodshop/src/views/v-set.vue'
+import Sushi from '/myproj/foodimpact/foodshop/src/views/v-sushi.vue'
+
 
 export default {
     name: 'NavMenu',
